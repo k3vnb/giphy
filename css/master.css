@@ -1,9 +1,3 @@
-body {
-
-}
-
-
-
 .jumbotron {
   text-align: center;
 }
@@ -22,13 +16,20 @@ body {
    outline: none !important;
 }
 
-.result {
-  min-height: 10vh;
-  min-width: 500px;
-}
 
 .container {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.result {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.gif-place {
+  margin: 2%;
+  border: 2px solid black;
 }

@@ -19,14 +19,14 @@ export class GiphyLand {
         const b = a + 5;
         let newArray = [];
         for (var i = a; i < b; i++){
-          console.log(i + "i");
         newArray.push(response.data[i].images.fixed_height.url);
         }
-        success(response);//callback function named success with ARGUMENT response that hasn't necessarily been grabbed yet from server
+
+        success(newArray);//callback function named success with ARGUMENT response that hasn't necessarily been grabbed yet from server
       },
 
       error: function() {
-        error(response);
+        error(response);//callback function named error that's a blank template for doing whatever we want when called in frontend
       }
 
     });//ajax
